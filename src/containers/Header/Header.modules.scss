@@ -1,0 +1,17 @@
+@use "../../partials/devices";
+@import "../../partials/palette";
+
+.Header {
+  width: 250px;
+  height: 100vh;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 8px 8px 0;
+
+  @include devices.phone {
+    height: 150px;
+    width: 100vw;
+    border-radius: 0 0 8px 8px;
+  }
+}

@@ -1,0 +1,14 @@
+@use "./partials/devices";
+@import "./partials/palette";
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: $green;
+  display: flex;
+  gap: 20px;
+
+  @include devices.phone {
+    flex-direction: column;
+  }
+}
