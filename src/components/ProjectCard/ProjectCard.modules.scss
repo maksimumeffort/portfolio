@@ -1,0 +1,12 @@
+@use "../../partials/devices";
+@import "../../partials/palette";
+
+.ProjectCard {
+  height: 300px;
+  width: 96%;
+  background-color: $lightGrey;
+  margin: 10px;
+  @include devices.phone {
+    width: 96%;
+  }
+}

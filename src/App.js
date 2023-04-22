@@ -4,9 +4,13 @@ import { Body } from "./containers/Body/Body";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Body />
+    <div className="app">
+      <header className="app-header">
+        <Header />
+      </header>
+      <main className="app-main">
+        <Body />
+      </main>
     </div>
   );
 }

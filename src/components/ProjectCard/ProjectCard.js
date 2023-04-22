@@ -1,6 +1,9 @@
+import "./ProjectCard.modules.scss";
 
 export const ProjectCard = () => {
   return (
-    <div>ProjectCard</div>
-  )
-}
+    <div div className="ProjectCard">
+      ProjectCard
+    </div>
+  );
+};

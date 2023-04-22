@@ -1,14 +1,39 @@
 @use "./partials/devices";
 @import "./partials/palette";
 
-.App {
+.app {
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
   background-color: $green;
   display: flex;
-  gap: 20px;
 
   @include devices.phone {
     flex-direction: column;
+  }
+
+  &-header {
+    width: 125px;
+    height: 100vh;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+
+    @include devices.phone {
+      height: 150px;
+      width: 100vw;
+    }
+  }
+  &-main {
+    // border: 1px solid red;
+    overflow: scroll;
+    display: flex;
+    background-color: rgba($white, 0.5);
+    flex-grow: 1;
+    max-height: 100vh;
+    //   margin: 2px 2px 0 2px;
+
+    @include devices.phone {
+      flex-direction: column;
+    }
   }
 }

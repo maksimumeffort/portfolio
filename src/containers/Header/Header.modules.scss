@@ -1,17 +1,110 @@
 @use "../../partials/devices";
 @import "../../partials/palette";
 
-.Header {
-  width: 250px;
-  height: 100vh;
-  background-color: $white;
+.container {
   display: flex;
   flex-direction: column;
-  border-radius: 0 8px 8px 0;
 
   @include devices.phone {
-    height: 150px;
-    width: 100vw;
-    border-radius: 0 0 8px 8px;
+    flex-direction: row;
+  }
+}
+
+.info {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+
+  @include devices.phone {
+    justify-content: center;
+  }
+
+  &__avatar {
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: center;
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+  }
+
+  &__title {
+    margin-top: 10px;
+
+    @include devices.phone {
+      margin-left: 10px;
+    }
+  }
+  &__title > h3,
+  h1 {
+    text-align: center;
+  }
+}
+
+.skills {
+  // background-color: red;
+  margin-top: 10px;
+  max-width: 494px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  &__options {
+    // width: 100px;
+    @include devices.phone {
+      height: 40px;
+      display: flex;
+      overflow: scroll;
+      scroll-snap-type: x mandatory;
+      overflow-x: scroll;
+      white-space: nowrap;
+      position: relative;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
+
+.skills__options * {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.skills__options label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.skills__options label:hover {
+  background-color: rgba($green, 0.5);
+  color: $white;
+}
+
+li {
+  width: 120px;
+  margin: 2px;
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: $green;
+    color: white;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-bottom: 5px;
   }
 }

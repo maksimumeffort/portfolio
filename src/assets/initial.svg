@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>initial</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="initial" transform="translate(2.000000, 2.000000)" stroke="#7CC273">
+            <circle id="Oval" stroke-width="3" cx="29.5" cy="29.5" r="29.5"></circle>
+            <path d="M8.0963452,31.81815 C7.84900898,31.31848 8.09261681,30.91341 8.65839438,30.91341 L50.08085,30.91341 C50.63859,30.91341 50.82882,31.27112 50.4971,31.72418 L43.24214,41.63275 C42.91429,42.08053 42.56997,42.00371 42.47348,41.46341 L37.82352,15.423643 C37.72686,14.882339 37.50412,14.8774475 37.33258,15.393028 L29.64621,38.49402 C29.47172,39.01842 29.27133,38.99225 29.20129,38.45604 L26.0631,14.4310077 C25.99186,13.8856365 25.7563,13.8534788 25.53689,14.3593351 L13.753017,41.52772 C13.533639,42.0335 13.159341,42.04663 12.907957,41.53878 L8.0963452,31.81815 Z" id="Stroke-6" stroke-width="2.5"></path>
+        </g>
+    </g>
+</svg>
