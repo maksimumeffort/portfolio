@@ -1,0 +1,17 @@
+@use "../../partials/devices";
+@import "../../partials/palette";
+
+.about {
+  // max-width: 96%;
+  background-color: rgba($green, 0.8);
+  margin: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  &__text h3,
+  p {
+    color: white;
+  }
+}
+.inactive {
+  display: none;
+}
