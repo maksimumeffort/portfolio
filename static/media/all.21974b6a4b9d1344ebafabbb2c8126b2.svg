@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>codicon:run-all</title>
+    <desc>Created with Sketch.</desc>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="codicon:run-all" transform="translate(4.000000, 4.000000)">
+            <rect id="ViewBox" x="5" y="5" width="65" height="65"></rect>
+            <g id="Group" transform="translate(16.000000, 16.000000)" fill="#7CC273" fill-rule="nonzero">
+                <path d="M2.63190184,0 L0,1.37412315 L0,41.5923617 L2.63190184,43 L33,22.8908807 L33,20.1091193 L2.63190184,0 Z M3,38 L3,4 L29,21.0167818 L3,38 Z" id="Shape"></path>
+                <polygon id="Path" points="13 43 43 22.9235003 43 20.0764997 13 0 13 4.12643586 38.9681093 21.5171506 13 38.8735641"></polygon>
+            </g>
+            <path d="M74,65.7777778 L74,8.22222222 C74,3.68121428 70.3187857,0 65.7777778,0 L8.22222222,0 C3.68121428,0 0,3.68121428 0,8.22222222 L0,65.7777778 C0,70.3187857 3.68121428,74 8.22222222,74 L65.7777778,74 C70.3187857,74 74,70.3187857 74,65.7777778 Z" id="Path" stroke="#7CC273" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

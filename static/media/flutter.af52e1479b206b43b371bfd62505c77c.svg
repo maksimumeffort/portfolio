@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>devicon-plain:flutter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="devicon-plain:flutter" transform="translate(4.000000, 4.000000)">
+            <rect id="ViewBox" x="1" y="1" width="71" height="71"></rect>
+            <path d="M11,37.5859375 L38.8529981,10 L56,10 L19.6170213,45.921875 L11,37.5859375 Z M38.8529981,65 L56,65 L41.1595745,50.3476563 L56,35.3945313 L38.8529981,35.3945313 L24.0125725,50.1757813 L38.8529981,65 Z" id="Shape" fill="#7CC273" fill-rule="nonzero"></path>
+            <path d="M74,65.7777778 L74,8.22222222 C74,3.68121428 70.3187857,0 65.7777778,0 L8.22222222,0 C3.68121428,0 0,3.68121428 0,8.22222222 L0,65.7777778 C0,70.3187857 3.68121428,74 8.22222222,74 L65.7777778,74 C70.3187857,74 74,70.3187857 74,65.7777778 Z" id="Path" stroke="#7CC273" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>
