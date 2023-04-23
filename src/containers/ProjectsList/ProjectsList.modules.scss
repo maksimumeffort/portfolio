@@ -5,14 +5,19 @@
   margin-top: 10px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   @include devices.phone {
     grid-template-columns: repeat(1, 1fr);
   }
   @include devices.tablet {
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include devices.tablet-landscape {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include devices.laptop {
+    grid-template-columns: repeat(3, 1fr);
   }
   @include devices.larger-screen {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
