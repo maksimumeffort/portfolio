@@ -112,6 +112,9 @@
     width: 40px;
     // border: 1px solid blue;
     padding-left: 10px;
+    & * {
+      display: flex;
+    }
     @include devices.phone {
       position: absolute;
       margin-left: auto;
@@ -147,30 +150,7 @@
   }
 }
 
-.skills__options * {
-  display: flex;
-  // flex-direction: row;
-  // text-align: center;
-}
-
-.skills__options label:hover {
-  background-color: rgba($green, 0.5);
-  color: $white;
-}
-
-.more {
-  display: flex;
-  justify-content: center;
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    background-color: $green;
-    color: white;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin-bottom: 5px;
-  }
+#Projects {
+  background-color: white;
+  color: $darkGrey;
 }

@@ -33,7 +33,7 @@ export const Header = () => {
         <section class="nav">
           <div class="nav__options">
             {navOptions.map((opt) => {
-              return <button>{opt}</button>;
+              return <button id={opt}>{opt}</button>;
             })}
             <div class="nav__options--ball"></div>
           </div>
