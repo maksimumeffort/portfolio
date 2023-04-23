@@ -1,0 +1,13 @@
+@use "../../partials/devices";
+@import "../../partials/palette";
+
+.stats {
+  // max-width: 96%;
+  background-color: $darkDarkGrey;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  & * {
+    color: white;
+  }
+}
