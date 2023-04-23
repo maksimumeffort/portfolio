@@ -103,15 +103,26 @@
   z-index: 2;
   display: flex;
   align-items: center;
+  position: relative;
+  @include devices.phone {
+    margin-left: 0px;
+  }
   &__options {
-    margin-top: 70px;
+    margin-top: 115px;
     width: 40px;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     padding-left: 10px;
     @include devices.phone {
-      margin: 0px;
-      height: 50px;
-      width: 100%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin-top: 10px;
+      padding-left: 2px;
+      height: 40px;
+      width: 340px;
       display: flex;
       overflow: scroll;
       scroll-snap-type: x mandatory;
@@ -128,6 +139,10 @@
     @include devices.phone {
       margin-bottom: 0px;
       margin-right: 20px;
+    }
+    & svg {
+      height: 30px;
+      width: 30px;
     }
   }
 }

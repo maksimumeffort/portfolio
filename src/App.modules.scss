@@ -15,7 +15,7 @@
     max-width: 135px;
     height: 100vh;
     display: flex;
-    border: 1px solid green;
+    // border: 1px solid green;
 
     @include devices.phone {
       height: 135px;
