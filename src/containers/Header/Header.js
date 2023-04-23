@@ -1,35 +1,51 @@
 import "./Header.modules.scss";
-import logo from "../../assets/initial.svg";
+// icons
+import { ReactComponent as Logo } from "../../assets/icons/initial.svg";
+import { ReactComponent as All } from "../../assets/icons/all.svg";
+import { ReactComponent as JS } from "../../assets/icons/javascript.svg";
+import { ReactComponent as TS } from "../../assets/icons/typescript.svg";
+import { ReactComponent as Ruby } from "../../assets/icons/ruby.svg";
+import { ReactComponent as Python } from "../../assets/icons/python.svg";
+import { ReactComponent as Java } from "../../assets/icons/java.svg";
+import { ReactComponent as Flutter } from "../../assets/icons/flutter.svg";
 
 export const Header = () => {
+  const navOptions = ["Stats", "Projects", "About"];
+
   const skills = [
-    "All",
-    "JavaScript",
-    "TypeScript",
-    "Java",
-    "Ruby",
-    "Python",
-    "Flutter",
+    <All />,
+    <JS />,
+    <TS />,
+    <Java />,
+    <Ruby />,
+    <Python />,
+    <Flutter />,
   ];
 
   return (
-    <div className="container">
-      <section class="info">
-        <div class="info__avatar">
-          <img src={logo} alt="" class="info__avatar--img" />
-        </div>
-      </section>
+    <>
+      <div class="container">
+        <section class="icon">
+          <div class="icon__avatar">
+            <Logo />
+          </div>
+        </section>
+        <section class="nav">
+          <div class="nav__options">
+            {navOptions.map((opt) => {
+              return <button>{opt}</button>;
+            })}
+            <div class="nav__options--ball"></div>
+          </div>
+        </section>
+      </div>
       <section class="skills">
         <div class="skills__options">
           {skills.map((skill) => {
-            return (
-              <li>
-                <label for={skill}>{skill}</label>
-              </li>
-            );
+            return <a href="">{skill}</a>;
           })}
         </div>
       </section>
-    </div>
+    </>
   );
 };

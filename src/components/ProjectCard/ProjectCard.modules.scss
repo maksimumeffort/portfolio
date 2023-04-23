@@ -3,9 +3,11 @@
 
 .ProjectCard {
   height: 300px;
-  width: 96%;
-  background-color: $lightGrey;
+  // max-width: 96%;
+  background-color: $white;
   margin: 10px;
+  border-radius: 8px;
+
   @include devices.phone {
     width: 96%;
   }

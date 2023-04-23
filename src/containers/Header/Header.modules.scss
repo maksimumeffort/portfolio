@@ -4,15 +4,16 @@
 .container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   @include devices.phone {
     flex-direction: row;
+    height: 76px;
   }
 }
 
-.info {
+.icon {
   display: flex;
-  background-color: white;
   justify-content: center;
   align-items: center;
 
@@ -42,18 +43,75 @@
   }
 }
 
+.nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+
+  @include devices.phone {
+    margin-top: 10px;
+    height: 50px;
+  }
+  &__options {
+    position: relative;
+    width: 76px;
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include devices.phone {
+      flex-direction: row;
+      height: 30px;
+    }
+    &--ball {
+      transform: rotate(-90deg);
+      z-index: 1;
+      left: 75px;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $lightGrey;
+      border-radius: 50%;
+      background-color: $lightGrey;
+      @include devices.phone {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 48px;
+        transform: rotate(0deg);
+      }
+    }
+  }
+  & button {
+    background-color: rgba($white, 0);
+    color: $white;
+    border: 1px solid white;
+    border-radius: 10px;
+    &:hover {
+      background-color: white;
+      color: $darkGrey;
+    }
+  }
+}
+
 .skills {
-  // background-color: red;
-  margin-top: 10px;
-  max-width: 494px;
-  text-align: center;
+  background-color: $lightGrey;
+  margin-left: 5px;
+  z-index: 2;
   display: flex;
   align-items: center;
-  background-color: $white;
   &__options {
-    // width: 100px;
+    margin-top: 70px;
+    width: 40px;
+    border: 1px solid blue;
+    padding-left: 10px;
     @include devices.phone {
-      height: 40px;
+      margin: 0px;
+      height: 50px;
+      width: 100%;
       display: flex;
       overflow: scroll;
       scroll-snap-type: x mandatory;
@@ -63,33 +121,26 @@
       -webkit-overflow-scrolling: touch;
     }
   }
+  & a {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    @include devices.phone {
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
+  }
 }
 
 .skills__options * {
   display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.skills__options label {
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.25rem;
-  border-radius: 2rem;
-  font-size: 17px;
-  cursor: pointer;
-  transition: all 0.1s;
+  // flex-direction: row;
+  // text-align: center;
 }
 
 .skills__options label:hover {
   background-color: rgba($green, 0.5);
   color: $white;
-}
-
-li {
-  width: 120px;
-  margin: 2px;
-  scroll-behavior: smooth;
-  scroll-snap-align: center;
 }
 
 .more {

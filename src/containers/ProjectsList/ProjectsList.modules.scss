@@ -12,4 +12,7 @@
   @include devices.tablet {
     grid-template-columns: repeat(1, 2fr);
   }
+  @include devices.larger-screen {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
