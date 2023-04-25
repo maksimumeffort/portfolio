@@ -8,6 +8,10 @@ import { ReactComponent as Ruby } from "../../assets/icons/ruby.svg";
 import { ReactComponent as Python } from "../../assets/icons/python.svg";
 import { ReactComponent as Java } from "../../assets/icons/java.svg";
 import { ReactComponent as Flutter } from "../../assets/icons/flutter.svg";
+// pages
+import { Stats } from "../Stats/Stats";
+import { AboutSection } from "../AboutSection/AboutSection";
+import { ProjectsList } from "../ProjectsList/ProjectsList";getSelection
 
 export const Header = () => {
   const navOptions = ["Stats", "Projects", "About"];
@@ -21,6 +25,11 @@ export const Header = () => {
     <Python />,
     <Flutter />,
   ];
+
+  const changeState = (state) => {
+    state = state === "inactive" ? "active" : "inactive";
+    return state;
+  };
 
   return (
     <>
