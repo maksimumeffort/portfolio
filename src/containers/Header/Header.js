@@ -11,7 +11,7 @@ import { ReactComponent as Flutter } from "../../assets/icons/flutter.svg";
 // pages
 import { Stats } from "../Stats/Stats";
 import { AboutSection } from "../AboutSection/AboutSection";
-import { ProjectsList } from "../ProjectsList/ProjectsList";getSelection
+import { ProjectsList } from "../ProjectsList/ProjectsList";
 
 export const Header = () => {
   const navOptions = ["Stats", "Projects", "About"];
