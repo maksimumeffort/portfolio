@@ -8,15 +8,11 @@ export const AboutSection = () => {
   ];
 
   return (
-    <div class="about inactive">
-      <section class="about__text ">
+    <div className="about">
+      <section className="about__text ">
         <h3>About Me</h3>
-        {textArray.map((text) => {
-          return (
-            <>
-              <p>{text}</p>
-            </>
-          );
+        {textArray.map((text, index) => {
+          return <p key={index}>{text}</p>;
         })}
       </section>
     </div>

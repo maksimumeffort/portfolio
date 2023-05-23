@@ -1,4 +1,5 @@
 import "./Header.modules.scss";
+
 // icons
 import { ReactComponent as Logo } from "../../assets/icons/initial.svg";
 import { ReactComponent as All } from "../../assets/icons/all.svg";
@@ -13,7 +14,12 @@ import { Stats } from "../Stats/Stats";
 import { AboutSection } from "../AboutSection/AboutSection";
 import { ProjectsList } from "../ProjectsList/ProjectsList";
 
-export const Header = () => {
+export const Header = ({
+  showStats,
+  showAbout,
+  setShowStats,
+  setShowAbout,
+}) => {
   const navOptions = ["Stats", "Projects", "About"];
 
   const skills = [
@@ -26,32 +32,56 @@ export const Header = () => {
     <Flutter />,
   ];
 
-  const changeState = (state) => {
-    state = state === "inactive" ? "active" : "inactive";
-    return state;
+  const handleStatsClick = () => {
+    setShowStats(!showStats);
+  };
+
+  const handleAboutClick = () => {
+    setShowAbout(!showAbout);
   };
 
   return (
     <>
-      <div class="container">
-        <section class="icon">
-          <div class="icon__avatar">
+      <div className="container">
+        <section className="icon">
+          <div className="icon__avatar">
             <Logo />
           </div>
         </section>
-        <section class="nav">
-          <div class="nav__options">
-            {navOptions.map((opt) => {
-              return <button id={opt}>{opt}</button>;
-            })}
-            <div class="nav__options--ball"></div>
+        <section className="nav">
+          <div className="nav__options">
+            <button onClick={handleStatsClick}>Stats</button>
+            <button>Projects</button>
+            <button onClick={handleAboutClick}>About</button>
+            {/* {navOptions.map((opt, index) => {
+              return (
+                <button
+                  key={index}
+                  onClick={(e) => {
+                    const id = e.target.id;
+                    if (navOptions.indexOf(id) === 0) {
+                      handleStatsClick;
+                    } else if (navOptions.indexOf(id) === 2) {
+                      handleAboutClick;
+                    }
+                  }}
+                >
+                  {opt}
+                </button>
+              );
+            })} */}
+            <div className="nav__options--ball"></div>
           </div>
         </section>
       </div>
-      <section class="skills">
-        <div class="skills__options">
-          {skills.map((skill) => {
-            return <a href="">{skill}</a>;
+      <section className="skills">
+        <div className="skills__options">
+          {skills.map((skill, index) => {
+            return (
+              <a href="" key={index}>
+                {skill}
+              </a>
+            );
           })}
         </div>
       </section>

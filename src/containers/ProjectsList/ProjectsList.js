@@ -40,8 +40,8 @@ export const ProjectsList = () => {
 
   return (
     <div div className="ProjectsList">
-      {projects.map((project) => {
-        return <ProjectCard project={project} />;
+      {projects.map((project, index) => {
+        return <ProjectCard key={index} project={project} />;
       })}
     </div>
   );

@@ -21,7 +21,7 @@ export const Stats = () => {
   }, []);
 
   return (
-    <div class="stats inactive">
+    <div className="stats">
       {codeWars && (
         <div>
           <h2>CodeWars</h2>
